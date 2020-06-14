@@ -1,0 +1,129 @@
+@if $include-span == true {
+%span { 
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #e70970;
+ }
+
+.span1{
+    @extend %span;
+    background-color: $color-txt1;
+}
+.span2{
+    @extend %span;
+    background-color: $color-bg2;
+}
+.span3{
+    @extend %span;
+    background-color: $color-1;
+
+}
+.span4{
+    @extend %span;
+    background-color: $color-2;
+
+}
+
+.span5{
+    @extend %span;
+    background-color: $color-4;
+
+}
+.span6{
+    @extend %span;
+    background-color: $color-5;
+
+}
+
+
+
+.posicion1{
+    position: absolute;
+    top: 300px;
+    right: 350px;
+    @media(max-width: 1270px){
+        top: 200px;
+        right: 150px;
+    }
+    @media(max-width: 768px){
+        top: 100px;
+        right: 50px;
+        font-size: 2em;
+    }
+    @media(max-width: 600px){
+        top: 100px;
+        right: 0px;
+        font-size: 1.5em;
+    }
+    @media(max-width: 492px){
+        top: 100px;
+        right: 0px;
+        font-size: 1em;
+    }
+     @media(max-width: 368px){
+        top: 50px;
+        right: 0px;
+        font-size: 1em;
+    }
+}
+.posicion2{
+    position: absolute;
+    top: 480px;
+    right: 655px;
+    @media(max-width: 1270px){
+        top: 350px;
+        right: 460px;
+    }
+    @media(max-width: 1028px){
+        top: 300px;
+        right: 310px;
+        font-size: 1.4em;
+    }
+    @media(max-width: 768px){
+        top: 200px;
+        right: 235px;
+        font-size: 1.2em;
+    }
+    @media(max-width: 600px){
+        top: 175px;
+        right: 115px;
+        font-size: 1.1em;
+
+    }
+    @media(max-width: 492px){
+        top: 150px;
+        right: 80px;
+        font-size: 1em;
+        padding: 5px;
+    }
+     @media(max-width: 368px){
+        top: 100px;
+        right: 80px;
+        font-size: 1em;
+    }
+}
+.contornoOrange{
+    border: 2px solid $color-3;
+    @media(max-width: 772px){
+        padding: 10px;
+        width: 90%;
+
+    }
+}
+.title{
+    font-size: 1.8em; 
+    text-align: left;
+   
+
+}
+.txtTitle{
+    font-size: 1.5em;
+    text-align: left;
+
+  
+}
+.imgWeb{
+    max-width: 100%;
+}
+}
